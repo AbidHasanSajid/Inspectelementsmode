@@ -1,26 +1,43 @@
+<!-- HIDE HTML -->
 <body oncontextmenu="return false"> 
-<script>
-document.onkeydown=function(e)
-{
-  if(event.Key == 123)
-
-  {
-     return false;
-  }
+  <SCRIPT language=JavaScript>
    
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0))
-  {
-     return false;
-  }
+   var message = "DO NOT VIEW OUR CODE";
 
-  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0))
-  {
-     return false;
-  }
+    function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
 
-  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))
+    if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+
+    document.onmousedown = rtclickcheck;
+
+    </SCRIPT>
+    <!-- HIDE HTML -->    
+ 
+ 
+    <!-- HIDE HTML -->
+ <script>
+  document.onkeydown=function(e)
   {
-     return false;
+    if(event.Key == 123)
+  
+    {
+       return false;
+    }
+     
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0))
+    {
+       return false;
+    }
+  
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0))
+    {
+       return false;
+    }
+  
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))
+    {
+       return false;
+    }
   }
-}
-</script>
+  </script>
+ <!-- HIDE HTML -->
